@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class3</title>
+    <script src="/AngularFile/angular.min.js"></script>
+    <style>
+        .color{
+            background-color: red;
+            color: #fff;
+            font-size: 3rem;
+        }
+        .color2{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body ng-app="myAppModule" ng-controller="MyController" ng-cloak>
+    <h1>{{5*5}}</h1>
+    <h1 ng-if="Gender == 'male'">{{ans}}</h1>
+    <h1 ng-repeat="movies in MyMovies" ng-class="$index==1?'color':'color2'">{{movies}}</h1>
+    <h1 ng-style="{color: 'orange'}">Lorem, ipsum dolor sit amet consectetur adipisicing.</h1>
+    <h1 ng-style="style">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
+    <div ng-include="'index2.html'"></div>
+    <script src="main.js"></script>
+</body>
+</html>

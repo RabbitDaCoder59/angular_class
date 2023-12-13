@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angular</title>
+    <script src="../AngularFile/angular.min.js"></script>
+    <script src="/Modules/main.js"></script>
+</head>
+<body ng-app="appModule" ng-controller="appController" ng-init="firstname = 'Daniel';num1=5;num2=10; favColors = ['green','blue','white','black','Orange'];studentDetails = {name:'Edu',age:50,class:'DayCare'}">
+    <!-- Angular Expressions  -->
+    <h2>{{2 * 8}}</h2>
+    <!-- Angular Data -->
+    <h1>{{firstname}}</h1>
+    <h2>{{num1 + num2}}</h2>
+    <h1>{{favColors}}</h1>
+    <p>{{studentDetails}}</p>
+    <!-- <div style="background-color: {{favColor[0]}}; height: 100px;width: 100px;"></div> -->
+    <h1 ng-bind="firstname"></h1>
+    <div ng-bind="num2-num1"></div>
+
+    <div ng-repeat="colors in favColors">{{colors}}</div>
+    <div>
+        <h1>{{myName}}</h1>
+    </div>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>class4</title>
+    <script src="/AngularFile/angular.min.js"></script>
+</head>
+<body ng-app="module" ng-controller="controller" ng-cloak>
+    <h1 ng-style="myStyle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, sequi! Explicabo, quod.</h1>
+    <header ng-include="'./header.html'"></header>
+
+    <!-- initiating the custom directive -->
+    <!-- By Element Name -->
+    <my-First-Directive></my-First-Directive>
+    <!-- By Attribute Name -->
+    <div my-First-Directive></div>
+    <!-- By Class Name -->
+    <div class="my-First-Directive"></div>
+    <my-Second-Directive name="'Chinedu'"></my-Second-Directive>
+    <script src="main.js"></script>
+</body>
+</html>

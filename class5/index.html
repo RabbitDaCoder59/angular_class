@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>class5</title>
+    <script src="/AngularFile/angular.min.js"></script> 
+    <script src="main.js"></script>
+</head>
+<body ng-app="module" ng-controller="controller" ng-cloak ng-style="{backgroundColor:color}">
+    <output title="myName"></output>
+    <include link="'link1'"></include>
+    <input type="text" ng-model="color">
+    <!-- two way binding -->
+    <h1>{{color}}</h1>
+</body>
+</html>
